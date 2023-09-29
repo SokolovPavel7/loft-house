@@ -19,9 +19,33 @@ a {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    width: 1140px;
+    max-width: 1140px;
+
+    &--sm {
+        max-width: 824px;
+    }
 }
 
 .text-right  {
     text-align: right;
 }
+
+//Класс, который скрывает содержимое на странице, но который виден гугл-роботам
+.visually-hidden {
+    /*Содержать текст в поле размером 1 пиксель*/
+    height: 1px;
+    overflow: hidden; // чтобы не выходил за его пределы
+    width: 1px;
+
+    /*Сохранить макет*/
+    position: absolute;
+
+    /*Удалите все видимые следы (например, цвет фона)*/
+    clip: rect(1px 1px 1px 1px ); /*IE6, IE7*/
+    clip: rect(1px, 1px, 1px, 1px ); 
+    clip-path: inset(50%); /*браузеры в будущем*/
+
+    /*Prevent the screen reader to skip spaces between world*/
+    white-space: nowrap; 
+}
+

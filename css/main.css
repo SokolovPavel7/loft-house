@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
 * {
   padding: 0px;
@@ -103,11 +104,29 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1140px;
+  max-width: 1140px;
+}
+.container--sm {
+  max-width: 824px;
 }
 
 .text-right {
   text-align: right;
+}
+
+.visually-hidden {
+  /*Содержать текст в поле размером 1 пиксель*/
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  /*Сохранить макет*/
+  position: absolute;
+  /*Удалите все видимые следы (например, цвет фона)*/
+  clip: rect(1px 1px 1px 1px); /*IE6, IE7*/
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%); /*браузеры в будущем*/
+  /*Prevent the screen reader to skip spaces between world*/
+  white-space: nowrap;
 }
 
 .header {
@@ -179,4 +198,28 @@ a:hover {
 }
 .info--phone::before {
   background-image: url("./../img/header/phone.svg");
+}
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__row {
+  display: flex;
+  column-gap: 70px;
+}
+
+.benefits__item {
+  text-align: center;
+}
+
+.benefits__item-img {
+  margin-bottom: 53px;
+}
+
+.benefits__item-text {
+  font-size: 20px;
+  line-height: 1.35;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
