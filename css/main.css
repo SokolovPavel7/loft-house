@@ -300,4 +300,69 @@ a:hover {
   bottom: 44px;
   font-size: 24px;
   font-weight: 400;
+}
+
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../img/cta/cta-bg.jpg"), #c4c4c4;
+}
+
+.cta__title {
+  margin-bottom: 17px;
+}
+
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cta__text {
+  line-height: 1.5; /* 150% */
+}
+.cta__text p + p {
+  margin-top: 1em;
+}
+
+.cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+
+.form__input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in;
+}
+.form__input::placeholder {
+  color: #bebebe;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form__privacy {
+  font-size: 13px;
+  color: #e7e7e7;
+  text-align: center;
+  line-height: 1.23;
+}
+
+.form_btn {
+  height: 50px;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #d4c17f;
+  transition: background-color 0.2s ease-in;
+}
+.form_btn:hover {
+  background-color: #ddc676;
 }/*# sourceMappingURL=main.css.map */
