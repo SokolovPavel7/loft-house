@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <header class="header none">
+        <header class="header ">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-row">
@@ -55,7 +55,7 @@
             </div>
         </header>
         <main>
-            <section class="benefits none">
+            <section class="benefits ">
                 <h2 class="visually-hidden">Преимущества ЖК</h2>
                 <div class="container container--sm">
                     <div class="benefits__row">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </section>
-            <section class="appartments none">
+            <section class="appartments ">
                 <div class="container">
                     <div class="appartments__title">
                         <h2 class="title-2">Наши квартиры</h2>
@@ -143,7 +143,7 @@
                     </div>
                 </div>
             </section>
-            <section class="cta none">
+            <section class="cta ">
                 <div class="container">
                     <div class="cta__title">
                         <h2 class="title-2">Хотите посмотреть?</h2>
@@ -181,13 +181,60 @@
                     </div>
                 </div>
             </section>
-            <section class="video">
+            <section class="video ">
                 <h2 class="visually-hidden">Видео про ЖК Loft House</h2>
                 <div class="container">
-                    <a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" class="video__link">
-                        <img src="./img/video/play.svg" alt="" class="video__icon"/>
-                        <img src="./img/video/video-img.jpg" alt="" class="video__img"/>
+                    <a
+                        href="https://www.youtube.com/watch?v=bhJNL9JUsnY"
+                        class="video__link"
+                    >
+                        <img
+                            src="./img/video/play.svg"
+                            alt=""
+                            class="video__icon"
+                        />
+                        <img
+                            src="./img/video/video-img.jpg"
+                            alt=""
+                            class="video__img"
+                        />
                     </a>
+                </div>
+            </section>
+            <section class="section-map ">
+                <div class="container">
+                    <div class="section-map__title">
+                        <h2 class="title-2">Район на карте</h2>
+                    </div>
+                    <div class="section-map__map">
+                        <div class="map" id="map"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__title">
+                        <h2 class="title-2">Есть вопросы?</h2>
+                    </div>
+                    <form class="feedback__form form">
+                        <p class="form__privacy">
+                            Мы никому не передаем ваши данные. <br> И не сохраняем
+                            ваш номер в базу.
+                        </p>
+                        <input
+                            type="text"
+                            class="form__input"
+                            placeholder="Ваше имя"
+                        />
+                        <input
+                            type="text"
+                            class="form__input"
+                            placeholder="Ваш телефон"
+                        />
+                        <button type="submit" class="form_btn">
+                            Посмотреть район
+                        </button>
+                    </form>
                 </div>
             </section>
         </main>

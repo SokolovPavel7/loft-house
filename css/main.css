@@ -401,4 +401,32 @@ a:hover {
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
   filter: saturate(1.5);
+}
+
+.section-map {
+  padding: 180px 0;
+}
+
+.section-map__title {
+  margin-bottom: 88px;
+}
+
+.map {
+  height: 358px;
+  background: #626262;
+}
+
+.feedback {
+  padding-bottom: 180px;
+}
+
+.feedback__title {
+  margin: 38px;
+}
+
+.feedback__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
