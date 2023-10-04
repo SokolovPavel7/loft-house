@@ -141,6 +141,11 @@ a:hover {
   font-weight: 700;
 }
 
+.link-bold {
+  color: #d4c17f;
+  font-weight: 700;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -182,6 +187,7 @@ a:hover {
 
 .nav {
   font-size: 14px;
+  letter-spacing: 0.05em;
 }
 
 .nav__list {
@@ -429,4 +435,38 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   align-items: center;
+}
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 51px;
+  background-color: #2d343c;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.footer__logo {
+  margin-top: -12px;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__address {
+  display: grid;
+  gap: 20px;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
 }/*# sourceMappingURL=main.css.map */
