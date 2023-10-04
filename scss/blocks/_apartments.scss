@@ -1,13 +1,11 @@
-.section-map {
+.apartments {
     position: relative;
-    padding: 180px 0;
 
     &::before {
-        content: "V";
+        content: "III";
 
         position: absolute;
-        z-index: -1;
-        top: 150px;
+        top: 0px;
         //помещаем букву на середину окна + половину контейнера
         right: calc(50% + 550px);
         //теперь подвинем контейнер влево на половину своей ширины по стороне x
@@ -20,16 +18,13 @@
     }
 }
 
-.section-map__title {
+.apartments__title {
     margin-bottom: 88px;
 }
 
-
-
-.section-map__map {
-}
-
-.map {
-    height: 358px;
-    background: #626262;
+.apartments__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
 }
