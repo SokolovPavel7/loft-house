@@ -4,18 +4,12 @@
 
     &::after {
         content: "II";
-
-        position: absolute;
-        top: 0px;
         //помещаем букву на середину окна + половину контейнера
         left: calc(50% + 550px);
         //теперь подвинем контейнер влево на половину своей ширины по стороне x
         transform: translate(-50%, 0%);
-        line-height: 1.15;
 
-        opacity: 0.02;
-        font-size: 400px;
-        font-family: $font-accent;
+        @include decorNumber; 
     }
 }
 

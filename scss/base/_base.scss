@@ -26,7 +26,7 @@ a {
     }
 }
 
-.text-right  {
+.text-right {
     text-align: right;
 }
 
@@ -41,12 +41,12 @@ a {
     position: absolute;
 
     /*Удалите все видимые следы (например, цвет фона)*/
-    clip: rect(1px 1px 1px 1px ); /*IE6, IE7*/
-    clip: rect(1px, 1px, 1px, 1px ); 
+    clip: rect(1px 1px 1px 1px); /*IE6, IE7*/
+    clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%); /*браузеры в будущем*/
 
     /*Prevent the screen reader to skip spaces between world*/
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 //класс для временного скрытия секций сайта при разработке
@@ -64,4 +64,8 @@ a {
 .link-bold {
     color: $accent;
     font-weight: 700;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }

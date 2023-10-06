@@ -12,10 +12,13 @@
 
             position: absolute;
             left: 0px;
-            top: 0px;
+            top: 50%;
             width: 21px;
             height: 21px;
+            transform: translate(0%, -50%);
+
             background-repeat: no-repeat;
+            background-position: center;
         }
     }
 
@@ -25,5 +28,16 @@
 
     &--phone::before {
         background-image: url('./../img/header/phone.svg');
+    }
+
+    @include mediaTablet {
+        font-size: 14px;
+
+        &--map,
+        &--phone {
+            padding-left: 26px;
+
+            
+        }
     }
 }

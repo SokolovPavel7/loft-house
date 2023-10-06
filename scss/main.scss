@@ -1,11 +1,13 @@
 //Base
 @import './base/reset';
 @import './base/vars';
+@import './base/mixins';
 @import './base/base';
 
 //Blocks
 @import './blocks/header';
 @import './blocks/nav';
+@import './blocks/nav-icon';
 @import './blocks/info';
 @import './blocks/_benefits';
 @import './blocks/apartments';
@@ -15,6 +17,6 @@
 @import './blocks/video';
 @import './blocks/section-map';
 @import './blocks/feedback';
-@import './blocks/footer'
+@import './blocks/footer';
 
 
