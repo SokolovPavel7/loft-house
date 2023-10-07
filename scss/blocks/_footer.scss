@@ -4,12 +4,22 @@
     background-color: $footer-bg;
     font-size: 14px;
     letter-spacing: 0.05em;
+
+    @include mediaTablet {
+        padding-top: 36px;
+        padding-bottom: 25px;
+    }
 }
 
 .footer__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 40px 30px;
+    }
 }
 
 .footer__logo {
@@ -22,7 +32,6 @@
 .footer__nav-list {
     display: grid;
     gap: 15px;
-
 }
 
 .footer__address {
