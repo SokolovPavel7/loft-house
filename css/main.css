@@ -609,6 +609,7 @@ a:hover {
 }
 
 .video {
+  overflow: hidden;
   position: relative;
   text-align: center;
 }
@@ -652,6 +653,12 @@ a:hover {
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
 }
+@media screen and (max-width: 959px) {
+  .video__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
@@ -675,9 +682,19 @@ a:hover {
   font-family: "Playfair Display", serif;
   top: 150px;
 }
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 60px 0;
+  }
+}
 
 .section-map__title {
   margin-bottom: 88px;
+}
+@media screen and (max-width: 959px) {
+  .section-map__title {
+    margin-bottom: 44px;
+  }
 }
 
 .map {
