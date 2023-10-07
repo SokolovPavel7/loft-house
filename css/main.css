@@ -140,6 +140,11 @@ a:hover {
   color: #d4c17f;
   font-weight: 700;
 }
+@media screen and (max-width: 959px) {
+  .title-2 {
+    font-size: 28px;
+  }
+}
 
 .link-bold {
   color: #d4c17f;
@@ -159,7 +164,7 @@ a:hover {
   min-height: 840px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/header-bg.jpg"), lightgray 50%/cover no-repeat;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header {
     min-height: unset;
     row-gap: 50px;
@@ -202,7 +207,7 @@ a:hover {
   right: 15px;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav {
     display: none;
   }
@@ -211,7 +216,7 @@ a:hover {
 .header__nav-btn {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav-btn {
     display: block;
   }
@@ -226,7 +231,7 @@ a:hover {
   color: #d4c17f;
   font-weight: 700;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__title {
     font-size: 32px;
     padding-bottom: 100px;
@@ -245,7 +250,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__footer {
     display: flex;
     flex-direction: column;
@@ -348,7 +353,7 @@ a:hover {
 .info--phone::before {
   background-image: url("./../img/header/phone.svg");
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .info {
     font-size: 14px;
   }
@@ -379,7 +384,7 @@ a:hover {
   display: flex;
   column-gap: 70px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -394,7 +399,7 @@ a:hover {
 .benefits__item-img {
   margin-bottom: 53px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__item-img {
     width: 60px;
     height: 60px;
@@ -408,7 +413,7 @@ a:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__item-text {
     font-size: 16px;
   }
@@ -433,11 +438,21 @@ a:hover {
 .apartments__title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 959px) {
+  .apartments__title {
+    margin-bottom: 44px;
+  }
+}
 
 .apartments__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .apartments__cards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .card {
@@ -495,10 +510,22 @@ a:hover {
   font-size: 24px;
   font-weight: 400;
 }
+@media screen and (max-width: 959px) {
+  .card__title {
+    font-size: 20px;
+    left: 30px;
+    bottom: 30px;
+  }
+}
 
 .cta {
   padding: 180px 0;
   background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../img/cta/cta-bg.jpg"), #c4c4c4;
+}
+@media screen and (max-width: 959px) {
+  .cta {
+    padding: 60px 0;
+  }
 }
 
 .cta__title {
@@ -510,6 +537,11 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+@media screen and (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cta__text {
   line-height: 1.5; /* 150% */
@@ -517,11 +549,21 @@ a:hover {
 .cta__text p + p {
   margin-top: 1em;
 }
+@media screen and (max-width: 959px) {
+  .cta__text {
+    font-size: 14px;
+  }
+}
 
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__input {
@@ -545,6 +587,11 @@ a:hover {
   color: #e7e7e7;
   text-align: center;
   line-height: 1.23;
+}
+@media screen and (max-width: 959px) {
+  .form__privacy--bottom {
+    grid-row: 4/5;
+  }
 }
 
 .form_btn {

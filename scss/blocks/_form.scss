@@ -1,5 +1,4 @@
 .form {
-   
 }
 
 //ширину инпутам и кнопкам не задаем, так как используем гриды, а не флексы.
@@ -17,7 +16,7 @@
     }
 
     &:focus {
-    background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.3);
     }
 }
 
@@ -25,8 +24,15 @@
     font-size: 13px;
     color: $muted;
     text-align: center;
-    line-height: 1.23
-    ;
+    line-height: 1.23;
+
+    //добравляем форме с текстом модификатор
+    &--bottom {
+        @include mediaTablet {
+            //свойство переставляет текст в пятый ряд
+            grid-row: 4/5;
+        }
+    }
 }
 
 .form_btn {
@@ -39,8 +45,7 @@
     background-color: $accent;
     transition: background-color 0.2s ease-in;
 
-
     &:hover {
-    background-color: saturate($accent, 10%);
+        background-color: saturate($accent, 10%);
     }
 }
