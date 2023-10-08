@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Loft Hous</title>
         <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
     </head>
     <body>
-        <header class="header none">
+        <header class="header">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-row">
-
                         <a href="#!">
                             <img src="./img/logo.svg" alt="Loft House" />
                         </a>
@@ -33,7 +33,6 @@
                                 <div class="nav-icon"></div>
                             </button>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -64,7 +63,7 @@
             </div>
         </header>
         <main>
-            <section class="benefits none">
+            <section class="benefits">
                 <h2 class="visually-hidden">Преимущества ЖК</h2>
                 <div class="container container--sm">
                     <div class="benefits__row">
@@ -109,7 +108,7 @@
                     </div>
                 </div>
             </section>
-            <section class="apartments none">
+            <section class="apartments">
                 <div class="container">
                     <div class="apartments__title">
                         <h2 class="title-2">Наши квартиры</h2>
@@ -152,7 +151,7 @@
                     </div>
                 </div>
             </section>
-            <section class="cta none">
+            <section class="cta">
                 <div class="container">
                     <div class="cta__title">
                         <h2 class="title-2">Хотите посмотреть?</h2>
@@ -175,6 +174,7 @@
                                 placeholder="Ваше имя"
                             />
                             <input
+                                data-tel-input
                                 type="text"
                                 class="form__input"
                                 placeholder="Ваш телефон"
@@ -190,11 +190,12 @@
                     </div>
                 </div>
             </section>
-            <section class="video none">
+            <section class="video">
                 <h2 class="visually-hidden">Видео про ЖК Loft House</h2>
                 <div class="container">
                     <a
                         href="https://www.youtube.com/watch?v=bhJNL9JUsnY"
+                        data-youtubeLightbox
                         class="video__link"
                     >
                         <img
@@ -210,7 +211,7 @@
                     </a>
                 </div>
             </section>
-            <section class="section-map none" id="section-map">
+            <section class="section-map" id="section-map">
                 <div class="container">
                     <div class="section-map__title">
                         <h2 class="title-2">Район на карте</h2>
@@ -220,7 +221,7 @@
                     </div>
                 </div>
             </section>
-            <section class="feedback none">
+            <section class="feedback">
                 <div class="container">
                     <div class="feedback__title">
                         <h2 class="title-2">Есть вопросы?</h2>
@@ -236,6 +237,7 @@
                             placeholder="Ваше имя"
                         />
                         <input
+                            data-tel-input
                             type="text"
                             class="form__input"
                             placeholder="Ваш телефон"
@@ -247,7 +249,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer none1">
+        <footer class="footer">
             <div class="container">
                 <div class="footer__grid">
                     <div class="footer__logo">
@@ -285,25 +287,46 @@
                         <ul class="footer__nav-list">
                             <li>Адрес: Наб. реки Фонтанки 10-15</li>
                             <li>
-                                <a href="+7-812-123-45-67">Телефон: 8 (812) 123-45-67</a>
+                                <a href="+7-812-123-45-67"
+                                    >Телефон: 8 (812) 123-45-67</a
+                                >
                             </li>
                             <li>Отдел продаж: 10:00 - 20:00</li>
                             <li>
-                                E-mail: <a class="link-bold" href="mailto:vip@lofthouse.ru">vip@lofthouse.ru</a>
+                                E-mail:
+                                <a
+                                    class="link-bold"
+                                    href="mailto:vip@lofthouse.ru"
+                                    >vip@lofthouse.ru</a
+                                >
                             </li>
                         </ul>
                         <ul class="footer__socials">
                             <li>
-                                <a href="#!"><img src="./img/socials/youtube.svg" alt=""/></a>
+                                <a href="#!"
+                                    ><img
+                                        src="./img/socials/youtube.svg"
+                                        alt=""
+                                /></a>
                             </li>
                             <li>
-                                <a href="#!"><img src="./img/socials/vk.svg" alt=""/></a>
+                                <a href="#!"
+                                    ><img src="./img/socials/vk.svg" alt=""
+                                /></a>
                             </li>
                             <li>
-                                <a href="#!"><img src="./img/socials/facebook.svg" alt=""/></a>
+                                <a href="#!"
+                                    ><img
+                                        src="./img/socials/facebook.svg"
+                                        alt=""
+                                /></a>
                             </li>
                             <li>
-                                <a href="#!"><img src="./img/socials/instagram.svg" alt=""/></a>
+                                <a href="#!"
+                                    ><img
+                                        src="./img/socials/instagram.svg"
+                                        alt=""
+                                /></a>
                             </li>
                         </ul>
                     </div>
@@ -311,6 +334,19 @@
             </div>
         </footer>
 
+        <!-- YouTube LightBox -->
+        <div id="youtubelightbox" class="youtubelightbox">
+            <div class="youtubelightbox__centeredchild">
+                <div class="youtubelightbox__videowrapper">
+                    <div id="youtubelightboxPlayer"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=89574ee4-4efe-47c1-ab73-e24cb3cfa4bb&lang=ru_RU" type="text/javascript"></script>
+        <script src="./libs/phoneMask/mask.js"></script>
+        <script src="./libs/phoneMask/mask_list.js"></script>
+        <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
